@@ -1,0 +1,204 @@
+@import '~antd/es/style/themes/default.less';
+
+.card {
+  border-radius: 10px;
+  min-height: 76vh;
+
+  h1,
+  h2 {
+    color: @primary-color
+  }
+  h3 {
+    color: @primary-color
+  }
+
+  .btn {
+    border-radius: 8px;
+    padding: 0px 16px;
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .btnCall {
+    width: 49px;
+    height: 25px;
+    background: #34C759;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+
+  .desc {
+    font-size: medium;
+  }
+
+  .header-form {
+    margin-left: 3em;
+
+    h4 {
+      color: @primary-color
+    }
+  }
+
+  .paragraph-form {
+    margin: 0;
+    font-size: medium;
+
+    &:nth-last-child(1) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .btn-group {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6em;
+    width: 100%;
+    position: absolute;
+    // bottom: -30vh;
+    left: 0;
+    transform: translate(0, 200%);
+  }
+}
+
+.iphone {
+  background-image: url(./../../assets/iphone.png);
+  width: 388px;
+  height: 588px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.iphone .phone-number-text {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  width: 90%;
+  color: #000000;
+  border: none;
+}
+
+.iphone-on-call {
+  background-image: url(./../../assets/iphone.png);
+  width: 388px;
+  height: 588px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.iphone-on-call .phone-number-text {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  // color: #FFFFFF;
+}
+
+.iphone-on-call .phone-number-text-description {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  // color: #FFFFFF;
+}
+
+.iphone-on-call .margin-button {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center
+}
+
+.iphone-on-call .description-button {
+  padding-top: 5px;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: -0.408px;
+
+  // color: #FFFFFF;
+}
+
+.iphone-number-call {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10 15 10 15 !important;
+  background: #34C759;
+  text-align: center;
+  border: none;
+  line-height: 11px;
+  align-items: center;
+}
+
+.iphone-number-calling {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10 15 10 15 !important;
+  background: #C4C4C4;
+  text-align: center;
+  border: none;
+  line-height: 11px;
+  align-items: center;
+}
+
+.iphone-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10 15 10 15 !important;
+  background: #C4C4C4;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  border: none;
+  display: grid;
+  line-height: 11px;
+  align-items: center;
+}
+
+.iphone-number:focus {
+  outline: none;
+  border-radius: 50% !important;
+}
+
+.iphone-number label {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.iphone-number span {
+  position: absolute;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  top: 32px;
+  width: 38px;
+}

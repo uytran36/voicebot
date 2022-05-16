@@ -1,0 +1,68 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../../utils/custom.less';
+
+.title-modal-detail-user {
+  color: #000;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+@avatarColor: rgb(72, 151, 95);
+.colName {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .avatar {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.4rem;
+    color: @white;
+    text-align: center;
+    background-color: @avatarColor;
+  }
+}
+
+.userTable {
+  :global {
+    .ant-pro-table-list-toolbar-right {
+      display: flex;
+      align-items: end !important;
+      justify-content: flex-end;
+    }
+
+    .ant-card-body {
+      padding: 0px !important;
+    }
+    .ant-table-wrapper {
+      padding: 0px !important;
+    }
+  }
+}
+
+.deleteModalWrapper {
+  .warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    span {
+      margin-left: 5px;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .noButton {
+      margin-right: 10px;
+      color: #000;
+      background: #fff;
+    }
+    .yesButton {
+      color: #fff;
+      background: #127ace;
+    }
+  }
+}

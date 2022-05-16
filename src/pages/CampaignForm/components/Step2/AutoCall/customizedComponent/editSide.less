@@ -1,0 +1,39 @@
+@import '~antd/es/style/themes/default.less';
+
+.editSide {
+  .nodeName {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+
+    & > :nth-child(1) {
+      color: rgba(0, 0, 0, 0.85);
+    }
+    & > :nth-child(2) {
+      margin-left: 10px;
+      color: @primary-color;
+      font-size: 16px;
+    }
+
+    input[type='text'],
+    input[type='text']:focus {
+      background: transparent;
+      border: none;
+      outline-width: 0;
+    }
+  }
+
+  .editContent {
+    padding: 15px;
+  }
+
+  .collapseHeader {
+    margin-top: 15px;
+    & > :nth-child(1) {
+      padding: 0;
+      color: @primary-color;
+    }
+    & > :nth-child(2) {
+      padding-left: 10px;
+    }
+  }
+}

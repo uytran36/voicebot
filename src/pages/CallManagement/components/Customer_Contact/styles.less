@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: auto;
+  border: 1px solid #f0f0f0;
+  padding: 1rem 1.5rem;
+  min-height: 78vh;
+  .formWrapper {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    .formLeft {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  :global {
+    .ant-table-thead tr {
+      background: #FAFAFA;
+    }
+    .ant-table-thead th {
+      background-color: transparent;
+    }
+  }
+}
+
+.editWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cancel {
+    background-color: #fff;
+    color: #000;
+    margin-right: 10px;
+  }
+  .save {
+    background-color: #127ace;
+    color: #fff;
+  }
+}
+
+.search {
+  padding-bottom: 24px;
+}

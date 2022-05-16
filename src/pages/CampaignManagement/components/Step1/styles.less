@@ -1,0 +1,51 @@
+@import '~antd/es/style/themes/default.less';
+
+.wrapper {
+    margin-left: 20px;
+    .header {
+        & > * {
+            color: @primary-color !important;
+        }
+    }
+    .body {
+        display: flex;
+
+        & > :nth-child(1) {
+            padding: 0px 72px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid fade(@primary-color, 75%);
+            cursor: pointer;
+            & > :nth-child(1) {
+                font-size: 300px;
+            }
+        }
+        & > :nth-child(2) {
+            padding: 0px 72px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            & > :nth-child(1) {
+                font-size: 300px;
+            }
+        }
+    }
+}
+
+.icon {
+    & > :nth-child(1) {
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+    & > :nth-child(2) {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+}

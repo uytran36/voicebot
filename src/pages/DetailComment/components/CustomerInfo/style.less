@@ -1,0 +1,93 @@
+.customerInfo_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 14px;
+}
+.customerList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  .customerInfoWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .iconWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+    }
+    .customerFieldWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      .customerField {
+        color: rgba(0, 0, 0, 0.65);
+        font-weight: normal;
+        font-size: 9px;
+      }
+      .input {
+        padding: 4px;
+      }
+      .customerItem {
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.noteWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+  .noteTitle {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .note {
+    width: 100%;
+    padding: 8px;
+    color: #343943;
+    font-weight: normal;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+}
+.interactionHistory {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .interactionHistoryTitle {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .interactionHistoryList {
+    .timelineText {
+      padding-top: 3px;
+      color: #127ace;
+      font-size: 12px;
+      .black {
+        color: #262626;
+      }
+      .gray {
+        color: #8c8c8c;
+      }
+      .bold {
+        font-weight: 600;
+      }
+    }
+  }
+}
