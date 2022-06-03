@@ -1,0 +1,78 @@
+@import '~antd/es/style/themes/default.less';
+
+@strength-colors: darkred, orangered, orange, yellowgreen, green;
+
+.color-loop(@max, @index: 0) when (@index <= @max) {
+  @i: @index + 1;
+  @color: extract(@strength-colors, @i);
+  &[data-strength='@{index}'] {
+    width: (20% * @i);
+    background: @color;
+    color: @color;
+  }
+  .color-loop(@max, (@i));
+}
+
+.suggestion-loop(@max, @index: 0) when (@index <= @max) {
+  @i: @index + 1;
+  @color: extract(@strength-colors, @i);
+  &[data-strength='@{index}'] {
+    color: @color;
+  }
+  .suggestion-loop(@max, (@i));
+}
+
+.strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .strength-meter {
+    width: 80%;
+    position: relative;
+    height: 3px;
+    margin: 7px 0;
+    overflow: hidden;
+    background: #dddddd;
+    border-radius: 3px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: calc(20% - 3px);
+      z-index: 2;
+      display: block;
+      width: calc(20% + 6px);
+      height: inherit;
+      background: transparent;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 6px 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: calc(20% - 3px);
+      z-index: 2;
+      display: block;
+      width: calc(20% + 6px);
+      height: inherit;
+      background: transparent;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 6px 0;
+    }
+    .strength-meter-fill {
+      position: absolute;
+      width: 0;
+      height: inherit;
+      background: transparent;
+      transition: width 0.5s ease-in-out, background 0.25s;
+      .color-loop(5);
+    }
+  }
+  .suggestion {
+    text-align: center;
+    text-transform: capitalize;
+    transition: color 0.25s ease-in-out;
+    .suggestion-loop(5);
+  }
+}

@@ -1,0 +1,77 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../../utils/custom.less';
+
+.row-selected {
+  background-color: @descriptions-bg;
+  color: @primary-color;
+}
+
+.btn {
+  padding: 8px;
+}
+.icon {
+  transition: 0.2s background-color linear;
+  border-radius: 50%;
+  &:hover {
+    background-color: @normal-color;
+  }
+}
+
+.nameCampaign {
+  color: @primary-color;
+  text-transform: capitalize;
+}
+
+.nameCampaign:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.searchWrapper {
+  width: 400px;
+  // margin-left: 25px;
+  .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.header {
+  margin: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .content {
+    & > * {
+      border-radius: 2px;
+    }
+    & > :nth-child(1) {
+      margin-right: 8px;
+    }
+  }
+}
+
+
+.renderIcon {
+  & > :nth-child(1) {
+    margin-right: 8px;
+    color: orange;
+    .icon()
+  }
+  & > :nth-child(2) {
+    margin-right: 8px;
+    color: green;
+    .icon()
+  }
+  & > :nth-child(3) {
+    margin-right: 8px;
+    color: red;
+    .icon()
+  }
+  & > :nth-child(4) {
+    margin-right: 8px;
+    color: skyblue;
+    .icon()
+  }
+}

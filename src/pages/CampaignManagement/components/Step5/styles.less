@@ -1,0 +1,56 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../../utils/custom.less';
+
+@colorPrimary: #2F7CBA;
+
+.container_chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  // margin: 0 auto;
+}
+
+.title {
+  color: @colorPrimary !important;
+}
+
+.btn_play {
+  background-color: green;
+  margin: 0 10px 10px 0;
+}
+
+.tag {
+  color: @colorPrimary;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.label {
+  color: @colorPrimary;
+}
+
+.icon {
+  .icon()
+}
+
+.color_tag {
+  color: white !important;
+}
+
+@media screen and (max-width: 625px) {
+  .container_chart {
+    .doughnut {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .container_chart {
+    .doughnut {
+      width: 250px;
+    }
+  }
+}

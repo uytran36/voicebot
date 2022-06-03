@@ -1,0 +1,49 @@
+@import '~antd/es/style/themes/default.less';
+
+.wrapHeader {
+  margin-left: 24px;
+  .title,
+  .subTitle {
+    color: @primary-color !important;
+  }
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & > :nth-child(1) {
+    margin-right: 12px;
+  }
+}
+
+.upload {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.back-btn {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  color: fade(@primary-color, 75%);
+  transition: .2s color linear;
+  cursor: pointer;
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.fade-in {
+  animation: fadein .5s;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

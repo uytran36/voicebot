@@ -1,0 +1,17 @@
+@import '~antd/es/style/themes/default.less';
+
+.form {
+    margin-left: 20px;
+    // set same color
+    .title{
+        color: @primary-color;
+    }
+    .subTitle {
+        .content {
+            &::after {
+                letter-spacing: 4px;
+                content: '.';
+            }
+        }
+    }
+}

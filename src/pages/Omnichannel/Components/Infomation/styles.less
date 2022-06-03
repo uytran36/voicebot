@@ -1,0 +1,26 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../../utils/utils.less';
+
+.wraper {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    .header {
+        color: @black;
+        font-size: @heading-5-size;
+        font-weight: 600;
+        &::after {
+            letter-spacing: 5px;
+            content: ':';
+        }
+    }
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & > :nth-child(even) {
+        margin-left: .5rem;
+    }
+}

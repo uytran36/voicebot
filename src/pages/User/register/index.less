@@ -1,0 +1,78 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 429px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+    max-width: 429px;
+  }
+
+  :global {
+    .@{ant-prefix}-tabs-nav-list {
+      margin: auto;
+      font-size: 16px;
+    }
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+    .register {
+      float: right;
+    }
+    .moreInfo {
+      span {
+        color: #777;
+        &::after {
+          letter-spacing: 1px;
+          content: ' ';
+        }
+        &::before {
+          letter-spacing: 1px;
+          content: ' ';
+        }
+      }
+    }
+  }
+
+  .card {
+    border-radius: 40px;
+    width: 429px;
+    // height: 412px;
+  }
+
+  .logo {
+    height: 100px;
+    margin-right: 16px;
+    vertical-align: top;
+  }
+
+  .divider {
+    background-color: #1890FF;
+    height: 2px;
+    margin-top: auto;
+  }
+
+  .prefixIcon {
+    color: @primary-color;
+    font-size: @font-size-base;
+  }
+}

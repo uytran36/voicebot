@@ -1,0 +1,145 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: transparent;
+}
+
+.ant-pro-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with ie11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+@colorPrimary: #2F7CBA;
+@colorDeactive: #bdbcbc;
+@colorBackground: #ffffff;
+@colorCurrentStep: #ce4444;
+
+:global {
+  .ant-radio-inner {
+   border-color: #d1d1d1;
+  }
+  h4.ant-typography {
+    font-size: 22px;
+  }
+  h3.ant-typography {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .ant-form-item-label {
+    label {
+      font-size: 15px;
+    }
+  }
+  .ant-tree {
+    font-size: 15px;
+    font-weight: bold;
+    color: @colorPrimary;
+  }
+  .ant-form {
+    font-size: 15px;
+  }
+  .ant-input {
+    font-size: 15px;
+  }
+  .ant-tag {
+    font-size: 14px;
+    // color: #ffffff;
+    // background-color: @colorPrimary;
+    border-radius: 5px;
+    padding: 0 4px;
+    margin: 2px;
+  }
+  .ant-card-head {
+    border-bottom-color: #d1d1d1;
+  }
+  .ant-card-bordered {
+    border-color: #d1d1d1;
+  }
+  .ant-card-actions {
+    border-top-color: #d1d1d1;
+  }
+  .ant-table-tbody > tr.ant-table-row > td {
+    border-bottom-color: #d1d1d1;
+  }
+  .ant-table-thead > tr > th.ant-table-cell {
+    border-bottom-color: #d1d1d1;
+  }
+  .ant-input {
+    border-color: #d1d1d1;
+  }
+  .ant-btn {
+    border-color: #d1d1d1;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: #d1d1d1;
+  }
+}
+
+.ant-pro-sider {
+  position: relative;
+  background-color: #0B4B7E !important;//layoutHeaderBg: '#0B4B7E',
+  border-right: 0;
+  transition: background-color 0.3s, min-width 0.3s, max-width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  color: rgba(255, 255, 255, 0.65);
+  background: #0B4B7E !important;//layoutHeaderBg: '#0B4B7E',
+}
+
+#microphone-filled-slash {
+  fill: @colorPrimary;
+}

@@ -1,0 +1,36 @@
+.page-container {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  & > div > div {
+    padding: 0 !important;
+  }
+  // & > :nth-child(1) {
+  //   display: inline-block;
+  //   width: 100%;
+  //   overflow: hidden !important;
+  //   white-space: nowrap;
+  //   text-overflow: ellipsis;
+  // }
+  .current-page {
+    color: #127ace;
+  }
+  a {
+    color: rgba(0, 0, 0, 0.45);
+  }
+  a::after {
+    letter-spacing: 4px;
+    content: '/';
+  }
+}
+
+.logo {
+  background-image: var(--background);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 140px;
+	height: 32px;
+  object-fit: contain
+}

@@ -1,0 +1,37 @@
+.audio_wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+  .bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+
+    .bar__time {
+      color: #000000;
+      font-size: 16px;
+    }
+
+    .bar__progress {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      height: 10px;
+      margin: 0 20px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      .bar__progress__knob {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        background-color: #1eaf61;
+        // border: 1.5px solid white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 5px /* #7bbef4 */ '#1EAF61';
+      }
+    }
+  }
+}

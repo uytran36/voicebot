@@ -1,0 +1,90 @@
+.title {
+  // margin: 18px 12px;
+  padding:  18px 12px !important;
+  padding-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .title__text {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    color: #1169b0;
+    align-items: center;
+  }
+  .buttonFilter {
+    background-color: #2F7CBA;
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left: 7px;
+  }
+}
+
+.popover {
+  border: 1px solid #c4c4c4;
+}
+
+.popoverContent {
+  display: grid;
+
+  .calendar {
+    display: inline-flex;
+  }
+
+  .buttonSearch {
+    background-color: #1169b0;
+    color: white;
+    border-radius: 10;
+    font-weight: bold;
+  }
+}
+
+.calendarLeft {
+  width: 300px;
+  border-right: 1px solid #c4c4c4;
+}
+
+.calendarRight {
+  width: 300px;
+}
+
+.textGreen14 {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  // font-size: 14px;
+  line-height: 17px;
+  color: #16b14b;
+  padding-bottom: 30px;
+}
+
+.textBlue14 {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  // font-size: 14px;
+  line-height: 17px;
+  color: #1169b0;
+  padding-bottom: 30px;
+}
+
+.cardContent {
+  .title__card {
+    &::after {
+      letter-spacing:  5px;
+      content: ':';
+    }
+  }
+}
+
+.doughnutWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // .doughnut {
+  //   margin-left: 50px;
+  //   margin-right: 50px;
+  // }
+}

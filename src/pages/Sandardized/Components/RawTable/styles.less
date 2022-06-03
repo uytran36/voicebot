@@ -1,0 +1,27 @@
+@import '~antd/es/style/themes/default.less';
+
+.row-selected {
+  background-color: @descriptions-bg;
+  color: @primary-color;
+}
+
+.btn {
+  padding: 8px;
+}
+.icon {
+  transition: 0.2s background-color linear;
+  border-radius: 50%;
+  &:hover {
+    background-color: @normal-color;
+  }
+}
+
+.searchWrapper {
+  width: 400px;
+  // margin-left: 25px;
+  .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

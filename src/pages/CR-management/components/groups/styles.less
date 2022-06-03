@@ -1,0 +1,29 @@
+// .tab-alert-item {
+
+// }
+
+.selected {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  & > :nth-child(1) {
+    &::after {
+      letter-spacing: 3px;
+      content: ':';
+    }
+  }
+}
+
+.group-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+  & > :nth-child(even) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  & > :last-child {
+    margin-right: 0;
+  }
+}

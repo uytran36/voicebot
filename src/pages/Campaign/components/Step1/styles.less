@@ -1,0 +1,20 @@
+@import '~antd/es/style/themes/default.less';
+
+.form {
+    margin-left: 20px;
+    // set same color
+    .title, .label {
+        color: @primary-color;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .warn {
+        .textWarn {
+            &::after {
+                letter-spacing: 4px;
+                content: ':'
+            }
+        }
+    }
+}
